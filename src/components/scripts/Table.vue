@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto pa-5" max-width="95%" min-width="50%" outlined>
+  <v-card class="mx-auto pa-5" max-width="100%" min-width="50%" outlined>
     <v-card-title>
       <v-chip
         close

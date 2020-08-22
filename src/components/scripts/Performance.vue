@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto" max-width="95%" min-width="50%" outlined>
+  <v-card class="mx-auto" max-width="100%" min-width="50%" outlined>
     <v-card-title>
       <v-icon large left>
         mdi-router-wireless

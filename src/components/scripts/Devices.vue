@@ -5,7 +5,7 @@
         <v-col class="d-flex" cols="auto">
           <v-select
             v-model="model"
-            class="text-h8"
+            class="text-h6"
             :items="scriptName"
             :menu-props="{ bottom: true, offsetY: true }"
             @input="setSelected"
@@ -14,8 +14,15 @@
       </v-row>
       <template v-for="item in items">
         <v-row :key="item.index" justify="start">
-          <v-icon class="px-3" :key="item.action">{{ item.action }}</v-icon>
-          <p class="pt-3 text-h6" :key="item.title">{{ item.title }}</p>
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon class="pl-3">{{ item.action }}</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>{{ item.title }}</v-list-item-title>
+              <v-list-item-subtitle>usage rate: 6/12</v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
         </v-row>
 
         <v-slide-group multiple :key="item.index" class="pb-5">
@@ -61,6 +68,18 @@
   min-width: min-content;
 }
 
+/* 腳本選擇的style */
+.v-select__selection {
+  line-height: 25px;
+}
+.mdi-menu-down {
+  margin-top: 5px;
+}
+
+.v-application--is-ltr .v-list-item__icon:first-child {
+  margin-right: 20px;
+}
+
 .span_script_name {
   overflow: hidden;
   display: -webkit-box;
@@ -75,7 +94,7 @@
 <script>
 export default {
   data: () => ({
-    scriptName: ["Classfier", "farmer game", "storytelling", "Dou Dou's house"],
+    scriptName: ["Classfiergg", "farmer game", "storytelling", "Dou Dou's house"],
     model: "",
     selected_value: "",
     items: [
