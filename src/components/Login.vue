@@ -2,7 +2,7 @@
   <v-container fill-height>
     <v-row>
       <v-col>
-        <v-card class="mx-auto pa-5" max-width="95%" outlined>
+        <v-card class="mx-auto pa-5" max-width="30%" min-width="450" outlined>
           <v-row align="center" justify="center">
             <v-img
               class="ma-2"
